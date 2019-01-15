@@ -24,4 +24,9 @@ class tkhsw::browsers (
   class { '::tkhsw::browsers::tor_browser':
     ensure => $ensure,
   }
+
+  class { '::tkhsw::browsers::chromium':
+    ensure => $ensure,
+  }
+
 }

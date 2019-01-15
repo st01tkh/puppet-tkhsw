@@ -9,7 +9,7 @@
 #
 #
 
-class software (
+class tkhsw (
 ) inherits tkhsw::params {
 
   # Not Used
