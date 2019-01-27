@@ -21,6 +21,10 @@ class tkhsw::browsers (
     ensure => $ensure,
   }
 
+  class { '::tkhsw::browsers::opera':
+    ensure => $ensure,
+  }
+
   class { '::tkhsw::browsers::tor_browser':
     ensure => $ensure,
   }
