@@ -17,6 +17,10 @@ class tkhsw::database (
     ensure => $ensure,
   }
 
+  class { '::tkhsw::database::pgadmin4':
+    ensure => $ensure,
+  }
+
   class { '::tkhsw::database::sequelpro':
     ensure => $ensure,
   }

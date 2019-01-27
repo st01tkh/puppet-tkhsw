@@ -42,6 +42,8 @@ class tkhsw::params (
     # ### browsers ####
     $chrome_url     = 'http://dl.google.com/linux/chrome/deb/'
     $chrome_channel = 'stable'
+    $opera_url     = 'http://deb.opera.com/opera-stable/'
+    $opera_channel = 'stable'
 
 
     # ### virtualization ####
