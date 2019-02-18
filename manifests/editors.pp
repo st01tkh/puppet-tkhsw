@@ -17,6 +17,10 @@ class tkhsw::editors (
     ensure => $ensure,
   }
 
+  class { '::tkhsw::editors::neovim':
+    ensure => $ensure,
+  }
+
   class { '::tkhsw::editors::vim':
     ensure => $ensure,
   }

@@ -1,8 +1,8 @@
-# vim.pp
-# Install VI Improved
+# 
+# Install Neo VI Improved
 #
 
-class tkhsw::editors::vim (
+class tkhsw::editors::neovim (
   $ensure = $tkhsw::params::software_ensure,
 ) inherits tkhsw::params {
 
@@ -13,7 +13,7 @@ class tkhsw::editors::vim (
     default           => fail("The ${name} class is not supported on ${facts['os']['name']}."),
   }
 
-  package { 'vim':
+  package { 'neovim':
     ensure   => $ensure,
     provider => $provider,
   }
