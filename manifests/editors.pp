@@ -13,6 +13,10 @@ class tkhsw::editors (
     ensure => $ensure,
   }
 
+  class { '::tkhsw::editors::sublime_text':
+    ensure => $ensure,
+  }
+
   class { '::tkhsw::editors::textmate':
     ensure => $ensure,
   }
@@ -21,7 +25,15 @@ class tkhsw::editors (
     ensure => $ensure,
   }
 
+  class { '::tkhsw::editors::macvim':
+    ensure => $ensure,
+  }
+
   class { '::tkhsw::editors::vim':
+    ensure => $ensure,
+  }
+
+  class { '::tkhsw::editors::vscode':
     ensure => $ensure,
   }
 
